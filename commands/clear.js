@@ -2,9 +2,8 @@ const message = require("../events/guild/message");
 
 module.exports = {
     name: 'clear',
-    aliases: ['c', 'cl'],
     description: "Clear messages!",
-    async execute(message, args, cmd, client) {
+    async execute(message, args) {
         
         if (cmd === 'c'){
             if(!args[0]) return message.reply("kurang lengkap bos cek lagi ok!");
@@ -18,11 +17,6 @@ module.exports = {
             }) 
         }
         
-     
-        
-        if(cmd === 'cl'){
-            message.channel.send('haha mupeng');
-        }
 
 
         
