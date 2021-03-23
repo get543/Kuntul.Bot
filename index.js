@@ -37,6 +37,8 @@ client.on('message', message => {
         client.commands.get('hei').execute(message, args);
     } else if (command === 'clear') {
         client.commands.get('clear').execute(message, args);
+    } else if (command === 'play') {
+        client.commands.get('play').execute(message, args);
     }
 });
 
