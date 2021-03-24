@@ -31,21 +31,37 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
+    const cmd = args.shift().toLowerCase();
 
-    if (command == 'hei') {
+    // const cmdName = client.commands.get(cmd) || client.commands.find(cmdName => cmdName.aliasses && cmdName.aliasses.includes(cmd));
+
+    // if(!cmdName) return message.reply(`\`${cmdName}\` is not valid `)
+
+    // try{
+    //     commmand.execute(client, message, args, Discord);
+    // } catch(err){
+    //     message.reply('there was an error in the command');
+    //     console.log(err);
+    // }
+
+    if (cmd == 'hei') {
         client.commands.get('hei').execute(message, args);
-    } else if (command === 'clear') {
+    } else if (cmd === 'clear') {
         client.commands.get('clear').execute(message, args);
-    } else if (command === 'play') {
-        client.commands.get('play').execute(message, args);
-    } else if (command === 'skip') {
-        client.commands.get('skip').execute(message, args);
-    } else if (command === 'leave') {
+    } else if (cmd === 'leave') {
         client.commands.get('leave').execute(message, args);
-    } else if (command === 'meme') {
+    } else if (cmd === 'meme') {
         client.commands.get('meme').execute(message, args, Discord);
     }
+
+    if (cmd == 'play') {
+        client.commands.get('play').execute(message, args);
+    } else if (cmd === 'skip') {
+        client.commands.get('skip').execute(message, args);
+    }
+
+
+
 });
 
 
