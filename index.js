@@ -60,6 +60,8 @@ client.on('message', message => {
         client.commands.get('play').execute(message, args);
     } else if (cmd === 'skip') {
         client.commands.get('skip').execute(message, args);
+    } else if (cmd === 'queue') {
+        client.commands.get('queue').execute(client, message, args);
     }
 
 
