@@ -52,6 +52,8 @@ client.on('message', message => {
         client.commands.get('leave').execute(message, args);
     } else if (cmd === 'meme') {
         client.commands.get('meme').execute(message, args, Discord);
+    } else if (cmd === 'ping') {
+        client.commands.get('ping').execute(client, message, args, Discord);
     }
 
     if (cmd == 'play') {
