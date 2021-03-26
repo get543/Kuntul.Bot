@@ -27,11 +27,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-
-    if(message.mentions.members.first()) {
-        return message.channel.send('Apa oi manggil manggil!');
-    }
-
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
