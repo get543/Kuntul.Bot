@@ -13,13 +13,13 @@ module.exports = {
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('Lo harus ada di voice channel baru bisa cuk!');
         const permissions = voice_channel.permissionsFor(message.client.user);
-        if (!permissions.has('CONNECT')) return message.channel.send('Cek permissions lagi!');
-        if (!permissions.has('SPEAK')) return message.channel.send('Cek permissions lagi!');
+        if (!permissions.has('CONNECT')) return message.channel.send('Gak ada ijin! Cek Permission nya!');
+        if (!permissions.has('SPEAK')) return message.channel.send('Gak ada ijin! Cek Permission nya!');
 
         //This is our server queue. We are getting this server queue from the global queue.
         const server_queue = queue.get(message.guild.id);
 
-        if (!args.length) return message.channel.send('Kasih nama lagunya!');
+        if (!args.length) return message.channel.send('Lagu apa ?');
         let song = {};
 
         //If the first argument is a link. Set the song object to have two keys. Title and URl.
@@ -37,7 +37,7 @@ module.exports = {
             if (video) {
                 song = { title: video.title, url: video.url }
             } else {
-                message.channel.send('Error finding video.');
+                message.channel.send('Gak nemu videonya.. :crying_cat_face:');
             }
         }
 
@@ -62,7 +62,7 @@ module.exports = {
                 video_player(message.guild, queue_constructor.songs[0]);
             } catch (err) {
                 queue.delete(message.guild.id);
-                message.channel.send('Ada error connecting!');
+                message.channel.send('Connecting Error..');
                 throw err;
             }
         } else {
