@@ -1,13 +1,18 @@
 const Discord = require('discord.js');
 require('dotenv').config();
+const { resolveSoa } = require('dns');
+
 const client = new Discord.Client();
 
 const fs = require('fs');
 
 const prefix = '~';
 
-// { partials: ["MESSAGE", "CHANNEL", "REACTION"]}
 
+
+
+
+const { Recoverable } = require('repl');
 
 client.commands = new Discord.Collection();
 
@@ -32,16 +37,6 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const cmd = args.shift().toLowerCase();
 
-    // const cmdName = client.commands.get(cmd) || client.commands.find(cmdName => cmdName.aliasses && cmdName.aliasses.includes(cmd));
-
-    // if(!cmdName) return message.reply(`\`${cmdName}\` is not valid `)
-
-    // try{
-    //     commmand.execute(client, message, args, Discord);
-    // } catch(err){
-    //     message.reply('there was an error in the command');
-    //     console.log(err);
-    // }
 
     if (cmd == 'hei') {
         client.commands.get('hei').execute(message, args);
