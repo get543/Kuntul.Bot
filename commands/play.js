@@ -1,6 +1,5 @@
 const ytdl = require('ytdl-core');
 const ytSearch = require('yt-search');
-// const ffmpeg = require('ffmpeg-binaries')
 
 //Global queue for your bot. Every server will have a key and value pair in this map. { guild.id, queue_constructor{} }
 const queue = new Map();
@@ -14,13 +13,13 @@ module.exports = {
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('Lo harus ada di voice channel baru bisa cuk!');
         const permissions = voice_channel.permissionsFor(message.client.user);
-        if (!permissions.has('CONNECT')) return message.channel.send('Gak ada ijin lu! Cek Permission nya!');
-        if (!permissions.has('SPEAK')) return message.channel.send('Gak ada ijin lu! Cek Permission nya!');
+        if (!permissions.has('CONNECT')) return message.channel.send('Cek permissions lagi!');
+        if (!permissions.has('SPEAK')) return message.channel.send('Cek permissions lagi!');
 
         //This is our server queue. We are getting this server queue from the global queue.
         const server_queue = queue.get(message.guild.id);
 
-        if (!args.length) return message.channel.send('Lagu apa ?');
+        if (!args.length) return message.channel.send('Kasih nama lagunya!');
         let song = {};
 
         //If the first argument is a link. Set the song object to have two keys. Title and URl.
@@ -38,7 +37,7 @@ module.exports = {
             if (video) {
                 song = { title: video.title, url: video.url }
             } else {
-                message.channel.send('Gak bisa nemu videonya');
+                message.channel.send('Error finding video.');
             }
         }
 
