@@ -11,6 +11,5 @@ module.exports = {
             throw err;
         })
 
-        message.channel.send('apa su');
     }
 }
