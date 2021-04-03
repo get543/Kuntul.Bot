@@ -5,7 +5,6 @@ module.exports = {
 
 
         message.channel.send(`apa oi 👾`).then((msg) => {
-            
             setTimeout(() => message.delete(), 1000);
         }).catch((err) => {
             throw err;
