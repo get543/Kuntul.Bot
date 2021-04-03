@@ -1,11 +1,8 @@
 {
   "name": "botv2",
   "version": "2.0.0",
-  "description": "the second gen discord bot",
+  "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "14.16.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,12 +15,6 @@
     "fs": "0.0.1-security",
     "random-puppy": "^1.1.0",
     "yt-search": "^2.7.3",
-    "ytdl-core": "^4.5.0",
-    "ffmpeg-static": "^4.2.7",
-    "ffmpeg": "0.0.4",
-    "node-fetch": "^2.6.1",
-    "youtube-sr": "^4.0.3",
-    "discord-player": "^3.4.0",
-    "discord-ytdl-core": "^5.0.2"
+    "ytdl-core": "^4.5.0"
   }
 }
