@@ -3,11 +3,14 @@ module.exports = {
     description: "say hello command",
     execute(message, args, client) {
 
-        message.channel.send(`apa oi`).then((msg) => {
-            setTimeout(() => msg.delete(), 1000);
-            setTimeout(() => message.delete(), 10000);
+
+        message.channel.send(`apa oi 👾`).then((msg) => {
+            setTimeout(() => msg.delete(), 3000);
+            setTimeout(() => message.delete(), 5000);
         }).catch((err) => {
             throw err;
         })
+
+        message.channel.send('apa su');
     }
 }
