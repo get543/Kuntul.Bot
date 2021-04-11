@@ -28,6 +28,7 @@ for (const file of commandFiles) {
 client.on('ready', () => {
     console.log('Kuntul is Online!');
 
+    client.user.setActivity('Prefix: ~', {type: "PLAYING" }).catch(console.error)
 });
 
 client.on('message', message => {
