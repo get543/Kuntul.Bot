@@ -40,17 +40,17 @@ client.on("message", (message) => {
   } else if (cmd === "ping") {
     client.commands.get("ping").execute(client, message, args, Discord);
   } else if (cmd === "aku cinta kamu") {
-    client.commands.get("aku cinta kamu").execute(mesage, args);
+    client.commands.get("aku cinta kamu").execute(message, args);
   } else if (cmd === "dick") {
-    client.commands.get("dick").execute(mesage, args);
+    client.commands.get("dick").execute(message, args);
   } else if (cmd === "titit besar") {
-    client.commands.get("titit besar").execute(mesage, args);
+    client.commands.get("titit besar").execute(message, args);
   } else if (cmd === "isep kontol gw") {
-    client.commands.get("isep kontol gw").execute(mesage, args);
+    client.commands.get("isep kontol gw").execute(message, args);
   } else if (cmd === "sekai") {
-    client.commands.get("sekai").execute(mesage, args);
+    client.commands.get("sekai").execute(message, args);
   } else if (cmd === "help") {
-    client.commands.get("help").execute(mesage, args, Discord);
+    client.commands.get("help").execute(message, args, Discord);
   }
 
   if (cmd == "play") {
