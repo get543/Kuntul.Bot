@@ -39,14 +39,14 @@ client.on("message", (message) => {
     client.commands.get("meme").execute(message, args, Discord);
   } else if (cmd === "ping") {
     client.commands.get("ping").execute(client, message, args, Discord);
-  } else if (cmd === "aku cinta kamu") {
-    client.commands.get("aku cinta kamu").execute(message, args);
+  } else if (cmd === "akucintakamu") {
+    client.commands.get("akucintakamu").execute(message, args);
   } else if (cmd === "dick") {
     client.commands.get("dick").execute(message, args);
-  } else if (cmd === "titit besar") {
-    client.commands.get("titit besar").execute(message, args);
-  } else if (cmd === "isep kontol gw") {
-    client.commands.get("isep kontol gw").execute(message, args);
+  } else if (cmd === "tititbesar") {
+    client.commands.get("tititbesar").execute(message, args);
+  } else if (cmd === "isepkontolgw") {
+    client.commands.get("isepkontolgw").execute(message, args);
   } else if (cmd === "sekai") {
     client.commands.get("sekai").execute(message, args);
   } else if (cmd === "help") {
