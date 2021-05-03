@@ -50,7 +50,7 @@ client.on("message", (message) => {
   } else if (cmd === "sekai") {
     client.commands.get("sekai").execute(mesage, args);
   } else if (cmd === "help") {
-    client.commands.get("help").execute(mesage, args);
+    client.commands.get("help").execute(mesage, args, Discord);
   }
 
   if (cmd == "play") {
