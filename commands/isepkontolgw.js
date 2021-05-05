@@ -1,5 +1,5 @@
 module.exports = {
-  name: "isep kontol gw",
+  name: "isepkontolgw",
   description: "anime isep kontol",
   execute(message, args, client) {
     message.channel.send(
