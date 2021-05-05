@@ -20,6 +20,7 @@ module.exports = {
         { name: "~tititbesar", value: "uwaw titit besar sekali nich" },
         { name: "~idulfitri", value: "selamat idul fitri dari semua pihak" },
         { name: "~colbar", value: "khusus untuk para kaum duo colbar" },
+        { name: "~ohyeah", value: "ohyeah mantap" },
         )
         .addFields(
 		{ name: '\u200B', value: '\u200B' },

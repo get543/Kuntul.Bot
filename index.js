@@ -59,6 +59,8 @@ client.on("message", (message) => {
     client.commands.get("colbar").execute(message, args);
   } else if (cmd === "gajah") {
     client.commands.get("gajah").execute(message, args);
+  } else if (cmd === "ohyeah") {
+    client.commands.get("ohyeah").execute(message, args);
   }
 
   if (cmd == "play") {

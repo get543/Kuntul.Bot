@@ -2,10 +2,12 @@ module.exports = {
   name: "colbar",
   description: "khusus untuk colbar",
   execute(message, args, client) {
-    message.channel.send(`░░░░█─────────────
+    message.channel.send(`
+    ░░░░█─────────────
     ░░░░▓█───────▄▄▀▀█
     ░░░░▒░█────▄█▒░░▄░
-    ░░░░░░░▀▄─▄▀▒▀▀▀▄▄ ░░░░░░░░░█▒░░░░▄▀─
+    ░░░░░░░▀▄─▄▀▒▀▀▀▄▄ 
+    ░░░░░░░░░█▒░░░░▄▀─
     ▒▒▒░░░░▄▀▒░░░░▄▀──
     ▓▓▓▓▒░█▒░░░░░█▄───
     █████▀▒░░░░░█░▀▄──
