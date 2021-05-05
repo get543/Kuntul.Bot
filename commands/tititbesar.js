@@ -1,5 +1,5 @@
 module.exports = {
-  name: "titit besar",
+  name: "tititbesar",
   description: "emoticon titit besar",
   execute(message, args, client) {
     message.channel.send(`............ ▄▄ ▄▄
