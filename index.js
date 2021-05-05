@@ -51,6 +51,14 @@ client.on("message", (message) => {
     client.commands.get("sekai").execute(message, args);
   } else if (cmd === "help") {
     client.commands.get("help").execute(message, args, Discord);
+  } else if (cmd === "idulfitri") {
+    client.commands.get("idulfitri").execute(message, args);
+  } else if (cmd === "bernyanyi") {
+    client.commands.get("bernyanyi").execute(message, args);
+  } else if (cmd === "colbar") {
+    client.commands.get("colbar").execute(message, args);
+  } else if (cmd === "gajah") {
+    client.commands.get("gajah").execute(message, args);
   }
 
   if (cmd == "play") {
