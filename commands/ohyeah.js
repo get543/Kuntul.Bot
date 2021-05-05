@@ -1,6 +1,6 @@
 module.exports = {
-  name: "gajah",
-  description: "emoticon gajah",
+  name: "ohyeah",
+  description: "ohyeah mantap",
   execute(message, args, client) {
     message.channel.send(`
       ⠄⠄⠄⠄⠄⠄⠄⢎⢗⣾⠫⡫⢖⢄⠄⠄⠄⠄⠄⠄⠄⠄⠄
