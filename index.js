@@ -27,12 +27,6 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
   // bales chat oi
-  const target = message.mentions.users.first();
-
-  if (target) {
-    return message.channel.send("apa oi 👾");
-  }
-
   if (message.content.toLowerCase() == "oi") {
     message.channel.send(`apa oi 👾`);
   } else if (message.content.toLowerCase() == "woy") {
