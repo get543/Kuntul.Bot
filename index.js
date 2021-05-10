@@ -26,6 +26,31 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
+  // bales chat oi
+  const target = message.mentions.users.first();
+
+  if(target) {
+      return message.channel.send('apa oi 👾');
+  } 
+
+  if (message.content.toLowerCase() ==  'oi') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'woy') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'cuk') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'cok') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'uy') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'oit') {
+      message.channel.send(`apa oi 👾`);
+  } else if (message.content.toLowerCase() ==  'oy') {
+      message.channel.send(`apa oi 👾`);
+  }
+  // end bales chat oi
+ 
+ 
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).split(/ +/);
