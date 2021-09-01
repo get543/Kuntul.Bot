@@ -3,7 +3,7 @@ module.exports = {
     description: "Clear messages!",
     async execute(message, args) {
 
-
+        if (!permissions.has('ADMINISTRATOR')) return message.channel.send('gak dikasih ijin kau');
         if (!args[0]) return message.reply("kurang lengkap bos cek lagi ok!");
         if (isNaN(args[0])) return message.reply("kasih angka woy!");
 

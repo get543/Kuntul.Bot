@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 require('dotenv').config();
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 const fs = require('fs');
+const x = require('ultrax');
 
 const prefix = '~';
 
@@ -22,10 +23,10 @@ client.on('ready', () => {
     client.user.setPresence({
         activity: { 
             name: 'lagi ngudski ni aing',
-            type: 4
+            type: 4,
         },
-        status: 'dnd'
-    })
+        status: 'dnd',
+    });
 
     client.user.setPresence({ activities: [{ name: 'activity' }], status: 'idle' });
     client.user.setActivity("this you dumb fuck", { type: "COMPETING" }).catch(console.error);
@@ -70,7 +71,7 @@ client.on('message', message => {
     } else if (message.content.toLowerCase() ==  'gratisan') {
         message.channel.send(`$wa`);
     }
-    
+
 
 
 
@@ -120,7 +121,11 @@ client.on('message', message => {
         client.commands.get('shrug').execute(message, args, Discord);
     } else if (cmd === 'okger') {
         client.commands.get('okger').execute(message, args);
-    } 
+    } else if (cmd === 'sussybaka') {
+        client.commands.get('sussybaka').execute(client, message, args, Discord);
+    } else if (cmd === 'invite') {
+        client.commands.get('invite').execute(message, args);
+    }
 
 
     if (cmd == 'play') {

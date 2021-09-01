@@ -1,14 +1,8 @@
 module.exports = {
     name: 'hei',
+    aliases: ["h", "hai"],
     description: "say hello command",
-    execute(message, args, client) {
-
-
-        message.channel.send(`apa oi 👾`).then((msg) => {
-            setTimeout(() => message.delete(), 1000);
-        }).catch((err) => {
-            throw err;
-        })
-
+    execute(message, args, cmd, command) {
+        message.channel.send(`hello 😊`);
     }
 }
