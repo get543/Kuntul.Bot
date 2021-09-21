@@ -3,11 +3,11 @@ module.exports = {
     description: "Clear messages!",
     async execute(message, args) {
 
-        if (!permissions.has('ADMINISTRATOR')) return message.channel.send('gak dikasih ijin kau');
+
         if (!args[0]) return message.reply("kurang lengkap bos cek lagi ok!");
         if (isNaN(args[0])) return message.reply("kasih angka woy!");
 
-        if (args[0] > 100) return message.reply("gak bisa lebih dari 100 message tot!");
+        if (args[0] > 30) return message.reply("gak bisa lebih dari 30 message tot!");
         if (args[0] < 1) return message.reply("ya jangan 0 juga dong!");
 
         await message.channel.messages.fetch({ limit: args[0] }).then(messages => {
