@@ -4,8 +4,8 @@ module.exports = {
   execute(message, args, Discord) {
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#12A5F1")
-      .setTitle("Baca yaa sayang")
-      .setURL("https://www.youtube.com/channel/UC_MhnzBFd-YUFcToFCv8Qxw")
+      .setTitle("Gw juga bisa baca konten message click me 😇")
+      .setURL("https://sourceb.in/F45ufZVfDT")
       .setDescription("ini sayang.. pake yang bener yaa")
       .addFields(
         { name: "~akucintakamu", value: "fancy fuck you text" },
