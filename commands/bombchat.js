@@ -1,7 +1,7 @@
 module.exports = {
   name: "bombchat",
   description: "spam message",
-  execute(message, args) {
+  async execute(message, args) {
     
     message.delete(message.author);
 
