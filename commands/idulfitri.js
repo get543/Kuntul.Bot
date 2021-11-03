@@ -1,7 +1,7 @@
 module.exports = {
   name: "idulfitri",
   description: "semua pihak mengucapkan selamat idul fitri",
-  execute(message, args, client) {
+  execute(client, message, args, cmd, Discord) {
     message.channel.send(`Menteri sekretaris negara
       Menteri sosial 
       Menteri tenaga kerja dan transmigrasi TNIAL 

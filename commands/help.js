@@ -1,7 +1,7 @@
 module.exports = {
   name: "help",
   description: "This sends the list of commands!",
-  execute(message, args, Discord) {
+  execute(client, message, args, cmd, Discord) {
     const newEmbed = new Discord.MessageEmbed()
       .setColor("#12A5F1")
       .setTitle("Gw juga bisa baca konten message click me 😇")
@@ -11,8 +11,7 @@ module.exports = {
         { name: "~akucintakamu", value: "fancy fuck you text" },
         { name: "~ping", value: "cek ping" },
         { name: "~dick", value: "dick istimewa" },
-        { name: "~hei", value: "apa oi" },
-        { name: "~meme", value: "meme reddit" },       
+        { name: "~hei", value: "apa oi" },    
         { name: "~sekai", value: "high in the sekai" },
         { name: "~help", value: "list semua command" },
         { name: "~isepkontolgw", value: "anime isep kontol" },
@@ -26,6 +25,9 @@ module.exports = {
         { name: "~okger", value: "oke ger" },
         { name: "~bombchat", value: "ξ" },
         { name: "~clear", value: "clear message" },
+        { name: "~fallguys", value: "fall guys more like sussy guys" },
+        { name: "~spider", value: "mitsubishi spider emoticon" },
+        { name: "~bacot", value: "fancy bacot text" },
         )
 
     message.channel.send(newEmbed);

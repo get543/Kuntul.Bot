@@ -1,7 +1,7 @@
 module.exports = {
   name: "ohyeah",
   description: "ohyeah mantap",
-  execute(message, args, client) {
+  execute(client, message, args, cmd, Discord) {
     message.channel.send(`
       ⠄⠄⠄⠄⠄⠄⠄⢎⢗⣾⠫⡫⢖⢄⠄⠄⠄⠄⠄⠄⠄⠄⠄
       ⠄⠄⠄⠄⠄⢀⡎⠒⠐⠾⠛⠙⣆⡢⠑⢣⠄⠄⠄⠄⠄⠄⠄⠄ 

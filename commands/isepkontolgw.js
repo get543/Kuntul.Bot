@@ -1,7 +1,7 @@
 module.exports = {
   name: "isepkontolgw",
   description: "anime isep kontol",
-  execute(message, args, client) {
+  execute(client, message, args, cmd, Discord) {
     message.channel.send(
       `⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿. 
       ‏⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿ ‏

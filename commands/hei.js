@@ -1,10 +1,7 @@
 module.exports = {
     name: 'hei',
     description: "say hello command",
-    execute(message, args, client) {
-
-
+    execute(client, message, args, cmd, Discord) {
         message.channel.send('Hewo 😊');
-
     }
 }

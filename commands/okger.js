@@ -1,9 +1,9 @@
 module.exports = {
     name: "okger",
     description: "okger emoticon",
-    execute(message, args, client) {
+    execute(client, message, args, cmd, Discord) {
       message.channel.send(`
-    ░█████╗░██╗░░██╗  ░██████╗░███████╗██████╗░
+      ░█████╗░██╗░░██╗  ░██████╗░███████╗██████╗░
       ██╔══██╗██║░██╔╝  ██╔════╝░██╔════╝██╔══██╗
       ██║░░██║█████═╝░  ██║░░██╗░█████╗░░██████╔╝
       ██║░░██║██╔═██╗░  ██║░░╚██╗██╔══╝░░██╔══██╗

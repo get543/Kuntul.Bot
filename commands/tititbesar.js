@@ -1,7 +1,7 @@
 module.exports = {
   name: "tititbesar",
   description: "emoticon titit besar",
-  execute(message, args, client) {
+  execute(client, message, args, cmd, Discord) {
     message.channel.send(`............ ▄▄ ▄▄
       ......▄▌▒▒▀▒▒▐▄
       .... ▐▒▒▒▒▒▒▒▒▒▌

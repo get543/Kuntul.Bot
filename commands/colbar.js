@@ -1,7 +1,7 @@
 module.exports = {
   name: "colbar",
   description: "khusus untuk colbar",
-  execute(message, args, client) {
+  execute(client, message, args, cmd, Discord) {
     message.channel.send(`
     ░░░░█─────────────
     ░░░░▓█───────▄▄▀▀█
