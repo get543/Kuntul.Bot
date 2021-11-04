@@ -24,7 +24,6 @@ module.exports = async (client, Discord) => {
       .setDescription(message.cleanContent || "Empty")
       .setTimestamp();
 
-      console.log(User);
     client.channels.cache.get("877518005666471977").send(bulkEmbed);
   });
 };
