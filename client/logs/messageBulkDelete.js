@@ -1,4 +1,4 @@
-const { MessageFlags } = require("discord.js");
+const { MessageFlags, User } = require("discord.js");
 
 module.exports = async (client, Discord) => {
   client.on("messageDeleteBulk", async (message) => {
@@ -14,18 +14,17 @@ module.exports = async (client, Discord) => {
     
     // const { executor, target } = kicklog;
 
-    let author = message.content === '#c' || message.content === '#clear';
-
     const bulkEmbed = new Discord.MessageEmbed()
       .setColor("RED")
-      .setTitle("Message Deleted in Bulk")
+      .setTitle("Multiple Messages Deleted At Once")
       .addFields(
-        { name: "Author", value: `${message.user} has purge ${message.size} messages` },
+        { name: "Author", value: `${message.username} deleted **${message.size}** messages at once` },
         { name: "Channel", value: message.channel },
         )
-      .setDescription(message.content || "Empty")
+      .setDescription(message.cleanContent || "Empty")
       .setTimestamp();
 
+      console.log(User);
     client.channels.cache.get("877518005666471977").send(bulkEmbed);
   });
 };
