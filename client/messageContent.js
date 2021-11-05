@@ -149,6 +149,10 @@ module.exports = async (client) => {
       message.channel.send(`**F**ilm **C**har**l**es **Br**onz **I**daman **At**eng  \`Gol VIIA\``);
     } else if (message.content.toLowerCase() == "gas mulia") {
       message.channel.send(`**He**bat **Ne**nek **Ar**di **K**a**r**ena **Xe**nang **Re**nang  \`Gol VIIIA\``);
+    } else if (message.content.toLowerCase() == "unsur transisi") {
+      message.channel.send(`**Sc**andium, **Ti**tanium, **V**anadium, **C**h**r**om, **M**a**n**gan, **Fe**rum, **Co**balt, **Ni**kel, **Cu**prum, **Z**i**n**c  \`Periode 4\``);
+    } else if (message.content.toLowerCase() == "ion kompleks") {
+      message.channel.send(`\`**MIK = AP + L . BK**\``);
     }
   });
 };
