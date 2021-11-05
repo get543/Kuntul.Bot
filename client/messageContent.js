@@ -152,7 +152,7 @@ module.exports = async (client) => {
     } else if (message.content.toLowerCase() == "unsur transisi") {
       message.channel.send(`**Sc**andium, **Ti**tanium, **V**anadium, **C**h**r**om, **M**a**n**gan, **Fe**rum, **Co**balt, **Ni**kel, **Cu**prum, **Z**i**n**c  \`Periode 4\``);
     } else if (message.content.toLowerCase() == "ion kompleks") {
-      message.channel.send(`\`**MIK = AP + L . BK**\``);
+      message.channel.send(`**\`MIK = AP + L . BK\`**`);
     }
   });
 };
