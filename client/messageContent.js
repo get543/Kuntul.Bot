@@ -34,10 +34,6 @@ module.exports = async (client) => {
       message.channel.send(`lu anjing`);
     } else if (message.content.toLowerCase() == "lu") {
       message.channel.send(`lu kali`);
-    } else if (message.content.toLowerCase() == "deretvolta") {
-      message.channel.send(
-        `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F****e**ri **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
-      );
     } else if (message.content.toLowerCase() == "tot") {
       message.channel.send(`apa mau gw kentot`);
     } else if (message.content.toLowerCase() == "1+1") {
@@ -102,6 +98,13 @@ module.exports = async (client) => {
       message.channel.send(`bodo`);
     } else if (message.content.toLowerCase() == "masa?") {
       message.channel.send(`bodo`);
+    } else if (message.content.toLowerCase() == "bruh") {
+      message.channel.send(`╭━━╮╱╱╱╱╱╭╮
+┃╭╮┃╱╱╱╱╱┃┃
+┃╰╯╰┳━┳╮╭┫╰━╮
+┃╭━╮┃╭┫┃┃┃╭╮┃
+┃╰━╯┃┃┃╰╯┃┃┃┃
+╰━━━┻╯╰━━┻╯╰╯`);
     } else if (message.content.toLowerCase() == "ok ger") {
       message.channel.send(`
       ░█████╗░██╗░░██╗  ░██████╗░███████╗██████╗░
@@ -141,6 +144,12 @@ module.exports = async (client) => {
       ⣿⣿⣿⣿⣿⣿⡿⠟⠛⠄⠄⠄⠄⠙⣛⣿⣿⣵⣿⡿⢹⡟⣿⣿
       ⣿⠿⠿⠋⠉⠄⠄⠄⠄⠄⠄⠄⣀⣠⣾⣿⣿⣿⡟⠁⠹⡇⣸⣿
       ⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⠿⠿⠛⠋⠄⣸⣦⣠⣿⣿`);
+
+	  // chemistry stuff
+	} else if (message.content.toLowerCase() == "deretvolta") {
+      message.channel.send(
+        `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F****e**ri **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
+      );
     } else if (message.content.toLowerCase() == "alkali") {
       message.channel.send(`**H**ai **Li**na **K**alau **R**o**b**i **Cs** **Fr**ens  \`Gol IA\``);
     } else if (message.content.toLowerCase() == "alkali tanah") {
@@ -153,6 +162,8 @@ module.exports = async (client) => {
       message.channel.send(`**Sc**andium, **Ti**tanium, **V**anadium, **C**h**r**om, **M**a**n**gan, **Fe**rum, **Co**balt, **Ni**kel, **Cu**prum, **Z**i**n**c  \`Periode 4\``);
     } else if (message.content.toLowerCase() == "ion kompleks") {
       message.channel.send(`**\`MIK = AP + L . BK\`**`);
+    } else if (message.content.toLowerCase() == "unsur unsur periode 3") {
+      message.channel.send(`**Na**nti **M**in**g**gu **Al**ip **Si**buk **P**acaran **S**ama **Cl** **Ar**a`);
     }
   });
 };
