@@ -1,5 +1,7 @@
 module.exports = async (client, Discord) => {
   client.on("messageUpdate", async (oldMessage, newMessage) => {
+    if (oldMessage.content == newMessage.content) return;
+
     const editEmbed = new Discord.MessageEmbed()
       .setColor("#ff7272")
       .setTitle(`A Message Has Been Edited`)

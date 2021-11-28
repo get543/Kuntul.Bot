@@ -10,7 +10,7 @@ module.exports = async (client) => {
     const bodo = ["masa", "masa?"];
 
     // response to content of the message
-    if (apaoi.includes(message.content)) {
+    if (apaoi.includes(message.content.toLowerCase())) {
       message.channel.send(`apa oi 👾`);
     } else if (message.content.toLowerCase() == "yo") {
       message.channel.send(`wassap megi 😎`);
@@ -20,7 +20,7 @@ module.exports = async (client) => {
       message.channel.send(`tol`);
     } else if (message.content.toLowerCase() == "pan") {
       message.channel.send(`tek`);
-    } else if (luanjing.includes(message.content)) {
+    } else if (luanjing.includes(message.content.toLowerCase())) {
       message.channel.send(`lu anjing`);
     } else if (message.content.toLowerCase() == "lu") {
       message.channel.send(`lu kali`);
@@ -84,7 +84,7 @@ module.exports = async (client) => {
       message.channel.send(`kuy ewe`);
     } else if (message.content.toLowerCase() == "tolol") {
       message.channel.send(`lu tolol`);
-    } else if (bodo.includes(message.content)) {
+    } else if (bodo.includes(message.content.toLowerCase())) {
       message.channel.send(`bodo`);
     } else if (message.content.toLowerCase() == "bruh") {
       message.channel.send(`╭━━╮╱╱╱╱╱╭╮
