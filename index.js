@@ -20,11 +20,12 @@ const roleCreate = require('./client/logs/roleCreate');
 const roleDelete = require('./client/logs/roleDelete');
 const roleUpdate = require('./client/logs/roleUpdate');
 const messageDelete = require('./client/logs/messageDelete');
+const messageBulkDelete = require("./client/logs/messageBulkDelete");
+const messageUpdate = require("./client/logs/messageUpdate");
 const memberKicked = require("./client/logs/memberKicked");
 const memberBanned = require("./client/logs/memberBanned");
 const memberUpdate = require("./client/logs/memberUpdate");
 const userUpdate = require("./client/logs/userUpdate");
-const messageBulkDelete = require("./client/logs/messageBulkDelete");
 
 const prefix = process.env.PREFIX;
 
@@ -51,9 +52,10 @@ client.on("ready", () => {
   });
 });
 
-// view deleted message
+// message logs
 messageDelete(client, Discord);
 messageBulkDelete(client, Discord);
+messageUpdate(client, Discord);
 
 // member kicked
 memberKicked(client, Discord)

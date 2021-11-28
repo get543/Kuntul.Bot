@@ -7,7 +7,7 @@ module.exports = async (client, Discord) => {
       .setColor("RED")
       .setTitle(`${length} Messages Deleted At Once`)
       .addFields(
-        { name: "Content", value: messages.map(message => `${message.author.username} : ${message.content}`)},
+        { name: "Content", value: messages.map(message => `${message.author.username} : ${message.content}`) },
         { name: "Channel", value: channel ? `#${channel}` : "In some server i guess" },
       )
       .setTimestamp();
