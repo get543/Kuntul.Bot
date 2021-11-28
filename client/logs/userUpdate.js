@@ -12,15 +12,19 @@ module.exports = async (client, Discord) => {
       const { executor, target } = updateLog;
   
       if (oldUser === newUser) return;
-
-      const userEmbed = new Discord.MessageEmbed()
-        .setColor("BLUE")
-        .setAuthor(`${executor.username} has updated ${newUser}`, executor.displayAvatarURL())
-        .setTitle("User Updated")
-        .setDescription(`${executor.username} has update from ${oldUser}`)
-        .setTimestamp();
-  
-      client.channels.cache.get("877518005666471977").send(userEmbed);
+      
+      if (Date.now() - updateLog.createdTimestamp < 5000) {
+        const userEmbed = new Discord.MessageEmbed()
+          .setColor("BLUE")
+          .setAuthor(`${executor.username} has updated ${newUser}`, executor.displayAvatarURL())
+          .setTitle("User Updated")
+          .setDescription(`${executor.username} has update from ${oldUser}`)
+          .setTimestamp();
+    
+        client.channels.cache.get("877518005666471977").send(userEmbed);
+      } else {
+        client.channels.cache.get("877518005666471977").send("Someone just updated something");
+      }
     });
   };
   

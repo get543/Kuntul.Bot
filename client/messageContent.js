@@ -3,20 +3,14 @@ module.exports = async (client) => {
     // biar ga tabrakan
     if (message.author.id === client.user.id) return;
 
+    const apaoi = ["oi", "woy", "cok", "uy", "oit", "oy", "cuk"];
+
+    const luanjing = ["anjing", "ajg", "anjg"];
+
+    const bodo = ["masa", "masa?"];
+
     // response to content of the message
-    if (message.content.toLowerCase() == "oi") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "woy") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "cuk") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "cok") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "uy") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "oit") {
-      message.channel.send(`apa oi 👾`);
-    } else if (message.content.toLowerCase() == "oy") {
+    if (apaoi.includes(message.content)) {
       message.channel.send(`apa oi 👾`);
     } else if (message.content.toLowerCase() == "yo") {
       message.channel.send(`wassap megi 😎`);
@@ -26,11 +20,7 @@ module.exports = async (client) => {
       message.channel.send(`tol`);
     } else if (message.content.toLowerCase() == "pan") {
       message.channel.send(`tek`);
-    } else if (message.content.toLowerCase() == "anjing") {
-      message.channel.send(`lu anjing`);
-    } else if (message.content.toLowerCase() == "ajg") {
-      message.channel.send(`lu anjing`);
-    } else if (message.content.toLowerCase() == "anjg") {
+    } else if (luanjing.includes(message.content)) {
       message.channel.send(`lu anjing`);
     } else if (message.content.toLowerCase() == "lu") {
       message.channel.send(`lu kali`);
@@ -94,9 +84,7 @@ module.exports = async (client) => {
       message.channel.send(`kuy ewe`);
     } else if (message.content.toLowerCase() == "tolol") {
       message.channel.send(`lu tolol`);
-    } else if (message.content.toLowerCase() == "masa") {
-      message.channel.send(`bodo`);
-    } else if (message.content.toLowerCase() == "masa?") {
+    } else if (bodo.includes(message.content)) {
       message.channel.send(`bodo`);
     } else if (message.content.toLowerCase() == "bruh") {
       message.channel.send(`╭━━╮╱╱╱╱╱╭╮
@@ -145,8 +133,8 @@ module.exports = async (client) => {
       ⣿⠿⠿⠋⠉⠄⠄⠄⠄⠄⠄⠄⣀⣠⣾⣿⣿⣿⡟⠁⠹⡇⣸⣿
       ⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⠿⠿⠛⠋⠄⣸⣦⣠⣿⣿`);
 
-	  // chemistry stuff
-	} else if (message.content.toLowerCase() == "deretvolta") {
+      // chemistry stuff
+    } else if (message.content.toLowerCase() == "deretvolta") {
       message.channel.send(
         `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F****e**ri **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
       );
