@@ -64,8 +64,8 @@ memberKicked(client, Discord)
 memberBanned(client, Discord);
 
 // member updated
-// memberUpdate(client, Discord);
-userUpdate(client, Discord);
+memberUpdate(client, Discord);
+// userUpdate(client, Discord);
 
 // role 
 roleCreate(client, Discord);
