@@ -15,7 +15,8 @@ module.exports = async (client, Discord) => {
             .setColor(Brole.color || 'BLUE')
             .setAuthor(`${executor.username} just edited a role`, executor.avatarURL())
             .setTitle('Role Update') 
-            .setDescription(`**Role Before:** ${Arole.name} \n**Role After:** ${Brole.name} \n**RoleID:** ${Brole.id}`)
+            .setDescription(`**Role Before:** ${Arole.name} \n**Role After:** ${Brole.name}`)
+            .setFooter(`ID: ${Brole.id}`)
             .setTimestamp()
             
         client.channels.cache.get('877518005666471977').send(roleEmbed);

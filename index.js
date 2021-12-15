@@ -75,10 +75,10 @@ roleUpdate(client, Discord);
 // tag 
 messageTag(client);
 
-// image
+// message.content sends an image
 messageImage(client);
 
-// response to content of the message
+// message.content
 messageContent(client);
 
 client.on("message", async (message) => {

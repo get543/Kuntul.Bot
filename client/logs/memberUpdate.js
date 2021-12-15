@@ -19,16 +19,6 @@ module.exports = async (client, Discord) => {
       .setTitle("Member Updated")
       .setThumbnail(newMember.AvatarURL)
       .addField("Nickname", `Before : ${oldMember.displayName} \nAfter : ${newMember.displayName}`)
-      // .setDescription(
-      //    `\n${newMember.roles.name} 
-      //     \n${newMember.nickname}
-      //     \n${require('util').inspect(newMember.presence)}
-      //     \n${newMember.AvatarURL}
-      //     \n${newMember.displayName}
-      //     \n${newMember.permissions.permissionsIn}
-      //     \n${newMember.partial}
-      //     `
-      // )
       .setTimestamp();
 
     client.channels.cache.get("877518005666471977").send(updateEmbed);

@@ -13,7 +13,8 @@ module.exports = async (client, Discord) => {
             .setColor('BLUE')
             .setAuthor(`${executor.username} just deleted a role`, executor.avatarURL())
             .setTitle('Role Deleted')
-            .setDescription(`**Role Name:** ${role.name} \n**RoleID:** ${role.id}`)
+            .setDescription(`**Role Name:** ${role.name}`)
+            .setFooter(`ID: ${role.id}`)
             .setTimestamp()
 
         client.channels.cache.get('877518005666471977').send(roleEmbed);
