@@ -10,6 +10,6 @@ module.exports = async (client, Discord) => {
       .addField("Channel", channel ? `#${channel}` : "In some server i guess")
       .setTimestamp()
 
-    await client.channels.cache.get("877518005666471977").send(bulkEmbed);
+    await client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(bulkEmbed);
   });
 };

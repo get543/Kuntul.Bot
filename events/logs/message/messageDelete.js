@@ -1,6 +1,6 @@
 module.exports = async (client, Discord) => {
   client.on("messageDelete", (message) => {
-    const deleteChannel  = client.channels.cache.get("877518005666471977");
+    const deleteChannel  = client.channels.cache.get(process.env.DELETE_CHANNEL_ID);
 
     if (message.attachments.first()) {
       const picture = message.attachments.map((a) => a.proxyURL);

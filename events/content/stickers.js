@@ -1,9 +1,9 @@
 module.exports = async (client) => {
   client.on("message", async (message) => {
-    // biar ga tabrakan
+    // message author is the bot
     if (message.author.id === client.user.id) return;
     
-    // stiker
+    // sending image
     if (message.content.toLowerCase() == "dm sabi") {
       message.channel.send(`https://imgur.com/0QWBCUQ`);
     } else if (message.content.toLowerCase() == "sharing sabi") {

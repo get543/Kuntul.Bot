@@ -17,7 +17,7 @@ module.exports = async (client, Discord) => {
             .setFooter(`ID: ${role.id}`)
             .setTimestamp()
 
-        client.channels.cache.get('877518005666471977').send(roleEmbed);
+        client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(roleEmbed);
 
     });
 };

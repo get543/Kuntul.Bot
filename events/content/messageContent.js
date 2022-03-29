@@ -1,6 +1,6 @@
 module.exports = async (client) => {
   client.on("message", async (message) => {
-    // biar ga tabrakan
+    // message author is the bot
     if (message.author.id === client.user.id) return;
 
     const apaoi = ["oi", "woy", "cok", "uy", "oit", "oy", "cuk"];
@@ -134,9 +134,9 @@ module.exports = async (client) => {
       ⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⠿⠿⠛⠋⠄⣸⣦⣠⣿⣿`);
 
       // chemistry stuff
-    } else if (message.content.toLowerCase() == "deretvolta") {
+    } else if (message.content.toLowerCase() == "deret volta") {
       message.channel.send(
-        `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F****e**ri **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
+        `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F**e**r**i **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
       );
     } else if (message.content.toLowerCase() == "alkali") {
       message.channel.send(`**H**ai **Li**na **K**alau **R**o**b**i **Cs** **Fr**ens  \`Gol IA\``);

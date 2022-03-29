@@ -21,6 +21,6 @@ module.exports = async (client, Discord) => {
       .addField("Nickname", `Before : ${oldMember.displayName} \nAfter : ${newMember.displayName}`)
       .setTimestamp();
 
-    client.channels.cache.get("877518005666471977").send(updateEmbed);
+    client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(updateEmbed);
   });
 };

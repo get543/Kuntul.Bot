@@ -9,9 +9,9 @@ module.exports = async (client, Discord) => {
           { name: "Author", value: oldMessage.author },
           { name: "Channel", value: oldMessage.channel.name },
         )
-      .setDescription(`**Old Message :** ${oldMessage.content} \n\n **New Message :** ${newMessage.content}`)
+      .setDescription(`**Old Message :**\n${oldMessage.content} \n**New Message :**\n${newMessage.content}`)
       .setTimestamp();
 
-    await client.channels.cache.get("877518005666471977").send(editEmbed);
+    await client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(editEmbed);
   });
 };

@@ -18,6 +18,6 @@ module.exports = async (client, Discord) => {
       .setDescription(`${member.user.username} has been kicked`)
       .setTimestamp();
 
-    client.channels.cache.get("877518005666471977").send(kickEmbed);
+    client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(kickEmbed);
   });
 };

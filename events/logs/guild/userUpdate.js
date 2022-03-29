@@ -23,7 +23,7 @@ module.exports = async (client, Discord) => {
         .setDescription(`${executor.username} has update from ${oldUser}`)
         .setTimestamp();
 
-      client.channels.cache.get("877518005666471977").send(userEmbed);
+      client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(userEmbed);
     }
   });
 };
