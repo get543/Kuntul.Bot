@@ -55,7 +55,6 @@ memberBanned(client, Discord);
 
 // member updated
 memberUpdate(client, Discord);
-/* userUpdate(client, Discord); */
 
 // role
 roleCreate(client, Discord);
