@@ -1,7 +1,14 @@
-const express = require("express");
-const app = express();
-const port = 3000;
+const express = require('express');
+const server = express();
 
-app.get("/", (req, res) => res.send(`<h1>Hello World!</h1>`));
+server.all(`/`, (req, res) => {
+    res.send(`Result: [OK].`);
+});
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+function keepAlive() {
+    server.listen(3000, () => {
+        console.log(`Server is now ready! | ` + Date.now());
+    });
+}
+
+module.exports = keepAlive;
