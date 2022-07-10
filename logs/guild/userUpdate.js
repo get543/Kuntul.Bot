@@ -1,5 +1,5 @@
 // TODO make this work as intended
-
+/*
 module.exports = async (client, Discord) => {
   client.on("userUpdate", async (oldUser, newUser) => {
     const fetchedLogs = await oldUser.guild.fetchAuditLogs({
@@ -27,3 +27,4 @@ module.exports = async (client, Discord) => {
     }
   });
 };
+*/
