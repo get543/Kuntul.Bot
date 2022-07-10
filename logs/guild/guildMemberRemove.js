@@ -1,14 +1,14 @@
 module.exports = async (client, Discord) => {
-  client.on("guildMemberRemove", async member => {
+  client.on("guildMemberRemove", async (member) => {
     const fetchedLogs = await member.guild.fetchAuditLogs({
       limit: 1,
       type: "MEMBER_KICK",
     });
-    
+
     const kicklog = fetchedLogs.entries.first();
 
     if (!kicklog) return;
-    
+
     const { executor, target } = kicklog;
 
     const kickEmbed = new Discord.MessageEmbed()

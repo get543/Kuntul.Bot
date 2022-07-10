@@ -6,9 +6,9 @@ module.exports = async (client, Discord) => {
     const bulkEmbed = new Discord.MessageEmbed()
       .setColor("RED")
       .setTitle(`${length} Messages Deleted At Once`)
-      .setDescription(messages.map(message => `${message.author.username} : ${message.content}`))
+      .setDescription(messages.map((message) => `${message.author.username} : ${message.content}`))
       .addField("Channel", channel ? `#${channel}` : "In some server i guess")
-      .setTimestamp()
+      .setTimestamp();
 
     await client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(bulkEmbed);
   });
