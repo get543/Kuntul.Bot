@@ -1,6 +1,7 @@
 const KeepAlive = require("./server");
 require("dotenv").config();
 const Discord = require("discord.js");
+const logHandler = require("./handlers/logHandler");
 
 const client = new Discord.Client({
   partials: ["MESSAGE", "CHANNEL", "REACTION"],
@@ -9,7 +10,9 @@ const client = new Discord.Client({
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
 
-["commandHandler", "eventHandler", "logHandler"].forEach((handler) => {
+logHandler(client, Discord);
+
+["commandHandler", "eventHandler"].forEach((handler) => {
   require(`./handlers/${handler}`)(client, Discord);
 });
 
