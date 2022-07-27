@@ -1,8 +1,8 @@
 module.exports = {
-    name: "nyah",
-    description: "nyah anime",
-    execute(client, message, args, cmd, Discord) {
-      message.channel.send(`
+  name: "nyah",
+  description: "nyah anime",
+  execute(client, message, args, cmd, Discord) {
+    message.channel.send(`
 	  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣮⡻⣿⣿⣿⣿⣿ 
 	  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⠿⣿⣿⣿⣿⡿⠿⣷⣌⠛⣿⣿⣿ 
 	  ⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣧⡘⢿⡿⢋⣼⣿⣿⣿⣿⣷⣄⠢⣭⣓⠌⠻⣿ 
@@ -18,5 +18,5 @@ module.exports = {
 	  ⣧⠻⣿⣧⡹⣾⣧⣿⣱⣿⣿⣿⣿⡏⢁⣶⣿⣿⣿⣿⣧⢻⣿⣿⡿⠋⠁⠄⢹⣿ 
 	  ⣿⣧⡹⣿⣇⢿⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣿⣿⣿⡿⢟⣼⡿⠋⢀⣀⠄⠄⠈⣿ 
 	  ⣿⣿⣧⠻⣿⣦⣙⠿⠿⢿⣿⣿⣿⣿⣷⣮⠭⠭⠍⣒⣫⡵⢞⣨⡼⠁⠄⠄⠄⡸`);
-    },
+  },
 };

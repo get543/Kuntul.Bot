@@ -1,13 +1,13 @@
 module.exports = {
-    name: "okger",
-    description: "okger emoticon",
-    execute(client, message, args, cmd, Discord) {
-      message.channel.send(`
+  name: "okger",
+  description: "okger emoticon",
+  execute(client, message, args, cmd, Discord) {
+    message.channel.send(`
       ░█████╗░██╗░░██╗  ░██████╗░███████╗██████╗░
       ██╔══██╗██║░██╔╝  ██╔════╝░██╔════╝██╔══██╗
       ██║░░██║█████═╝░  ██║░░██╗░█████╗░░██████╔╝
       ██║░░██║██╔═██╗░  ██║░░╚██╗██╔══╝░░██╔══██╗
       ╚█████╔╝██║░╚██╗  ╚██████╔╝███████╗██║░░██║
       ░╚════╝░╚═╝░░╚═╝  ░╚═════╝░╚══════╝╚═╝░░╚═╝`);
-    },
+  },
 };

@@ -138,18 +138,30 @@ module.exports = async (Discord, client, message) => {
       `**Li**hat **K**alau **Ba**pak **Ca**mat **Na**nti **M**enin**g**gal **Al**marhum **M**i**n**ta **Z**ai**n**ab **C**a**r**i **F**e**r**i **C**e**d**ia **Co**ba **Ni**kah **S**a**n**a **P**em**b**antu **H**afiz **Cu**mi **H**an**g**us **Ag**ak **P**ai**t** **Au** ah`
     );
   } else if (message.content.toLowerCase() == "alkali") {
-    message.channel.send(`**H**ai **Li**na **K**alau **R**o**b**i **Cs** **Fr**ens  \`Gol IA\``);
+    message.channel.send(
+      `**H**ai **Li**na **K**alau **R**o**b**i **Cs** **Fr**ens  \`Gol IA\``
+    );
   } else if (message.content.toLowerCase() == "alkali tanah") {
-    message.channel.send(`**Be**li **M**an**g**ga **Ca**mpur **S**i**r**up **Ba**nyak **Ra**sa  \`Gol IIA\``);
+    message.channel.send(
+      `**Be**li **M**an**g**ga **Ca**mpur **S**i**r**up **Ba**nyak **Ra**sa  \`Gol IIA\``
+    );
   } else if (message.content.toLowerCase() == "halogen") {
-    message.channel.send(`**F**ilm **C**har**l**es **Br**onz **I**daman **At**eng  \`Gol VIIA\``);
+    message.channel.send(
+      `**F**ilm **C**har**l**es **Br**onz **I**daman **At**eng  \`Gol VIIA\``
+    );
   } else if (message.content.toLowerCase() == "gas mulia") {
-    message.channel.send(`**He**bat **Ne**nek **Ar**di **K**a**r**ena **Xe**nang **Re**nang  \`Gol VIIIA\``);
+    message.channel.send(
+      `**He**bat **Ne**nek **Ar**di **K**a**r**ena **Xe**nang **Re**nang  \`Gol VIIIA\``
+    );
   } else if (message.content.toLowerCase() == "unsur transisi") {
-    message.channel.send(`**Sc**andium, **Ti**tanium, **V**anadium, **C**h**r**om, **M**a**n**gan, **Fe**rum, **Co**balt, **Ni**kel, **Cu**prum, **Z**i**n**c  \`Periode 4\``);
+    message.channel.send(
+      `**Sc**andium, **Ti**tanium, **V**anadium, **C**h**r**om, **M**a**n**gan, **Fe**rum, **Co**balt, **Ni**kel, **Cu**prum, **Z**i**n**c  \`Periode 4\``
+    );
   } else if (message.content.toLowerCase() == "ion kompleks") {
     message.channel.send(`**\`MIK = AP + L . BK\`**`);
   } else if (message.content.toLowerCase() == "unsur unsur periode 3") {
-    message.channel.send(`**Na**nti **M**in**g**gu **Al**ip **Si**buk **P**acaran **S**ama **Cl** **Ar**a`);
+    message.channel.send(
+      `**Na**nti **M**in**g**gu **Al**ip **Si**buk **P**acaran **S**ama **Cl** **Ar**a`
+    );
   }
 };

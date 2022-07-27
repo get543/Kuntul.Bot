@@ -1,14 +1,19 @@
-const fs = require("fs");
+// const fs = require('fs');
 
 module.exports = (client, Discord) => {
   /*
-  const logFolders = fs.readdirSync("./logs");
+  const logsFolder = fs
+    .readdirSync('./logs')
+    .filter((file) => file.endsWith('.js'));
 
-  for (const folder of logFolders) {
-    const logFiles = fs.readdirSync(`./logs/${folder}`).filter((file) => file.endsWith(".js"));
+  for (const folder of logsFolder) {
+    const logFiles = fs
+      .readdirSync(`./logs/${folder}`)
+      .filter((file) => file.endsWith('.js'));
 
-    for (file of logFiles) {
-      require(`../logs/${folder}/${file}`)(client, Discord);
+    for (const file of logFiles) {
+      const Files = require(`../logs/${folder}/${file}`);
+      Files(client, Discord);
     }
   } */
 

@@ -18,7 +18,10 @@ module.exports = async (client, Discord) => {
       .setAuthor(`${executor.username} has updated ${target.username}`)
       .setTitle("Member Updated")
       .setThumbnail(newMember.AvatarURL)
-      .addField("Nickname", `Before : ${oldMember.displayName} \nAfter : ${newMember.displayName}`)
+      .addField(
+        "Nickname",
+        `Before : ${oldMember.displayName} \nAfter : ${newMember.displayName}`
+      )
       .setTimestamp();
 
     client.channels.cache.get(process.env.DELETE_CHANNEL_ID).send(updateEmbed);

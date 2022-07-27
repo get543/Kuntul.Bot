@@ -13,7 +13,10 @@ module.exports = async (client, Discord) => {
 
     const banEmbed = new Discord.MessageEmbed()
       .setColor("BLUE")
-      .setAuthor(`A member has been banned by: ${executor.username}`, executor.displayAvatarURL())
+      .setAuthor(
+        `A member has been banned by: ${executor.username}`,
+        executor.displayAvatarURL()
+      )
       .setTitle("Member Banned")
       .setDescription(`${member.user.username} has been banned`)
       .setTimestamp();

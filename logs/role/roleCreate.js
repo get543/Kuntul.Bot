@@ -11,7 +11,10 @@ module.exports = async (client, Discord) => {
 
     const roleEmbed = new Discord.MessageEmbed()
       .setColor(role.color || "BLUE")
-      .setAuthor(`${executor.username} just created a role`, executor.avatarURL())
+      .setAuthor(
+        `${executor.username} just created a role`,
+        executor.avatarURL()
+      )
       .setTitle("Role Created")
       .setDescription(`**Role Name:** ${role.name}`)
       .setFooter(`ID: ${role.id}`)

@@ -13,9 +13,14 @@ module.exports = async (client, Discord) => {
 
     const roleEmbed = new Discord.MessageEmbed()
       .setColor(Brole.color || "BLUE")
-      .setAuthor(`${executor.username} just edited a role`, executor.avatarURL())
+      .setAuthor(
+        `${executor.username} just edited a role`,
+        executor.avatarURL()
+      )
       .setTitle("Role Update")
-      .setDescription(`**Role Before:** ${Arole.name} \n**Role After:** ${Brole.name}`)
+      .setDescription(
+        `**Role Before:** ${Arole.name} \n**Role After:** ${Brole.name}`
+      )
       .setFooter(`ID: ${Brole.id}`)
       .setTimestamp();
 

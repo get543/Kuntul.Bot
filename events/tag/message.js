@@ -3,7 +3,11 @@ module.exports = async (Discord, client, message) => {
   if (message.author.id === client.user.id) return;
 
   // exclude @everyone @here
-  if (message.content.includes("@here") || message.content.includes("@everyone")) return false;
+  if (
+    message.content.includes("@here") ||
+    message.content.includes("@everyone")
+  )
+    return false;
 
   // bot got mention
   if (message.mentions.has(client.user)) {

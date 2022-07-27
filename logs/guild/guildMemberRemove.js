@@ -13,7 +13,10 @@ module.exports = async (client, Discord) => {
 
     const kickEmbed = new Discord.MessageEmbed()
       .setColor("BLUE")
-      .setAuthor(`A member has been kicked by: ${executor.username}`, executor.displayAvatarURL())
+      .setAuthor(
+        `A member has been kicked by: ${executor.username}`,
+        executor.displayAvatarURL()
+      )
       .setTitle("Member Kicked")
       .setDescription(`${member.user.username} has been kicked`)
       .setTimestamp();

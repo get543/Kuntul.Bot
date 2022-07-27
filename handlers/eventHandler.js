@@ -2,7 +2,9 @@ const fs = require("fs");
 
 module.exports = (client, Discord) => {
   const load_dir = (categories) => {
-    const eventFiles = fs.readdirSync(`./events/${categories}`).filter((file) => file.endsWith(".js"));
+    const eventFiles = fs
+      .readdirSync(`./events/${categories}`)
+      .filter((file) => file.endsWith(".js"));
 
     for (const file of eventFiles) {
       const event = require(`../events/${categories}/${file}`);
@@ -12,5 +14,7 @@ module.exports = (client, Discord) => {
     }
   };
 
-  ["client", "content", "prefix", "stickers", "tag"].forEach((e) => load_dir(e));
+  ["client", "content", "prefix", "stickers", "tag"].forEach((e) =>
+    load_dir(e)
+  );
 };
